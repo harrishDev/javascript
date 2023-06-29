@@ -1,1 +1,3 @@
-# Guess The Number 💭
+# Javascript-Mini-Projects:
+
+# 1. Guess The Number 💭
