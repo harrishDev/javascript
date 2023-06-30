@@ -27,3 +27,10 @@ for (let i = 0; i < btnsOpenModal.length; i++)
 btnCloseModal.addEventListener('click', closeModal);
 // overlay close btn
 overlay.addEventListener('click', closeModal);
+
+// ESC Keypress event
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+    closeModal();
+  }
+});
