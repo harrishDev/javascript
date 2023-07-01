@@ -70,3 +70,17 @@ btnHold.addEventListener('click', function () {
     }
   }
 });
+
+// new game
+btnNew.addEventListener('click', function () {
+  score0El.textContent = 0;
+  score1El.textContent = 0;
+  current0El.textContent = 0;
+  current1El.textContent = 0;
+  document
+    .querySelector(`.player--${activePlayer}`)
+    .classList.remove('player--winner');
+  diceEl.classList.add('hidden');
+  player0El.classList.add('player--active');
+  player1El.classList.remove('player--active');
+});
